@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>My Portofolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        
+        <style>@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ribeye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+        
+.sour-gummy-bold {
+  font-family: "Sour Gummy", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rowdies-bold {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 700;
+}
+
+.Lilita-One {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+}
+
+
+.sniglet-extrabold {
+  font-family: "Sniglet", sans-serif;
+  font-weight: 500;
+}
+
+.quicksand-bold {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 7000;
+}
+
+.bricolage-grotesque {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 500;
+}
+.ribeye-regular {
+  font-family: "Ribeye", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fredericka-the-great-regular {
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.winky-sans {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, #3F2B3B, #2b002b, #0d0d0d, #251F11, #44262E);
+        }
+        
+        nav {
+            padding: 16px;
+            background: #1E1E1E;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border-bottom: 5px dashed #f8d5e6;
+            position: ;
+            box-shadow: 0 10px 20px #69265D;
+            z-index: 100;
+        }
+        
+        nav a {
+            position: relative;
+            text-decoration: none;
+            color: #ff80ab;
+            font-family: 'Rowdies';
+            font-weight: 100;
+            transition: 0.3s;
+            cursor: none;
+            font-size: 14px;
+            letter-spacing: 1px;
+            position: sticky;
+        }
+        
+        nav a:hover {
+            color: #7162D5;
+            position: sticky;
+            transform: scale(1,1);
+        }
+        
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3;
+            width: 0%;
+            height: 15%;
+            background-color: white;
+          transition: width 0.3s ease-in-out;
+            border-radius: 5px;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+        
+        #img1 {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    msx-height: 160px;
+    margin-top: 50px;
+    left: 105px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 15px rgba(600,182,193,0.90);
+}
+        
+        #img2 {
+            width: 150px;
+            height: 80px;
+            position: relative;
+            left: 72px;
+            top: -1095px;
+            transform: rotate(-15deg);
+            
+        }
+        
+        
+        .nama {
+            text-align: center;
+            padding-inline: 50px;
+            font-size: 24px;
+            margin-top: 18px;
+            font-family: 'Quicksand';
+            font-weight: 1000;
+            background: linear-gradient(100deg, #A079DF, #F1D4FF, #9E5B8F, #655B9E);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .roleku {
+            text-align: center;
+            font-family: 'Bricolage Grotesque';
+            font-weight: 600;
+            font-size: 11px;
+            margin-top: 15px;
+            color: #ff80ab;
+            
+        }
+        
+        .button {
+            padding: 10 18px;
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            top: 22px;
+            left: 119px;
+            background: linear-gradient(90deg, #F8D9DE, #F2D9EC, #EDD8F7, #EAD9FD);
+            border-radius: 40px;
+            font-size: 14px;
+            font-family: 'Rowdies';
+            font-weight: 300;
+            text-align: center;
+            cursor: none;
+            box-shadow: 0 0 15px lightpink;
+            border: 2px solid purple;
+            text-shadow: 0 0 3px purple;;
+        }
+        button:hover {
+            box-shadow: 1px 0px 10px black;
+            transform: scale(1.05);
+        }
+        
+        #hrpertama {
+            position: relative;
+            top: 85px;
+            width: 85%;
+            background-color: #FFC7F6;
+            height: 5px;
+            box-shadow: 0 0 15px #E3A7FF;
+        }
+        
+        .aboutme {
+            text-align: center;
+            color: #ff80ab;
+            margin-top: 200px;
+            font-size: 28px;
+            font-weight: 600;
+            font-family: Ribeye;
+            letter-spacing: 2px;
+            background-color: white;
+            width: 60%;
+            position: relative;
+            left: 58px;
+            border-radius: 30px;
+            padding: 5px;
+            border: 5px solid #DF79B8;
+            box-shadow: 0 8px 2px lightpink;
+            
+        }
+        
+        
+        
+        .paragraf1 {
+            color: white;
+            margin-top: 50px;
+            text-align: justify;
+            padding-inline: 15px;
+            font-weight: 600;
+            font-family: 'Ubuntu';
+            font-size: 14px;
+            line-height: 20px;
+            text-shadow: 0 2px 5px lightpink;
+        }
+        
+        .maskills {
+            color: #ff80ab;
+            margin-top: 130px;
+            text-align: center;
+            font-family: Ribeye;
+            font-size: 30px;
+            background-color: white;
+            border: 5px solid #DF79B8;
+            box-shadow: 0 8px 2px lightpink;
+            width: 60%;
+            border-radius: 30px;
+            position: relative;
+            left: 60px;
+        }
+        
+        #hrkedua {
+            position: relative;
+            top: 130px;
+            width: 85%;
+            background-color: #FFC7F6;
+            height: 5px;
+            box-shadow: 0 0 15px #E3A7FF;
+        }
+        
+        .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+      margin-top: 50px;
+      padding-inline: 15px;
+    }
+
+    .skill {
+      background: #BC77B7;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      font-weight: 600;
+      color: pink;
+      transition: 0.3s;
+      font-family: 'Nerko One';
+      text-align: center;
+      font-size: 20px;
+      border: 2px solid purple;
+      text-shadow: 0 2px 2px #9B9B9B;
+    }
+
+    .skill:hover {
+      transform: translateY(-5px);
+      background: #fce4ec;
+    }
+    
+            #hrketiga {
+            position: relative;
+            top: 110px;
+            width: 85%;
+            background-color: #FFC7F6;
+            height: 5px;
+            box-shadow: 0 0 15px #E3A7FF;
+        }
+        
+                #galeri {
+            width: 50%;
+            border-radius: 50px;;
+            position: relative;
+            top: 200px;
+            padding-inline: 15px;
+        }
+        
+        .contact {
+            color: white;
+            text-align: center;
+            position: relative;
+            top: 200px;
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+        
+    footer {
+      margin-top: 250px;
+      padding: 15px;
+      background: #E4B7DB;
+      border-top: 2px solid #f8d5e6;
+      font-size: 0.9rem;
+      color: #888;
+      text-align: center;
+    }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Quicksand';
+        }
+        
+        a:hover {
+            color: purple;
+        }
+        
+        p {
+            font-family: 'Quicksand';
+        }
+        
+        
+        
+        
+        
+        </style>
+        </head>
+        <body>
+            <header>
+            <nav>
+                <a href="#Home">Home</a>
+                <a href="#Aboutme">About me</a>
+                <a href="#skills">Skills</a>
+                <a href="#Contact Me">Contact Me</a>
+            </nav>
+            </header>
+            <section id="Home">
+                <div class="foto">
+            <img id="img1" src="profilku.jpg">
+            </div>
+            <div class="nama">Dewi Lintang Chandramawa Syafira</div>
+            
+            <div class="roleku"> Progamming | Web Developer</div>
+            <a href="cv.pdf" class="button">📄  Download Cv</a>
+            </section>
+            
+            <hr id="hrpertama">
+            
+            <section id="Aboutme">
+                <div class="box1">
+                <div class="aboutme">About Me</div>
+                <div class="paragraf1">Hai!, nama saya <strong>Dewi Lintang</strong>. Saya adalah seseorang yang sedang menekuni bidang pengembangan web. 
+                    <br>
+                    <br>
+                    Meskipun masih di tahap awal, saya selalu berusaha konsisten belajar dan mengembangkan kemampuan melalui project kecil, latihan mandiri, maupun eksplorasi materi baru. 
+                    <br>
+                    <br>Bagi saya, Setiap hari ada hal baru yang bisa dipelajari, dan saya menikmati setiap tantangan yang membuat saya semakin berkembang.
+                    <br>
+                    <br>Saya percaya bahwa keterampilan di bidang teknologi dan desain akan sangat berguna di masa depan, baik untuk dunia kerja maupun project pribadi. Oleh karena itu, saya berkomitmen untuk terus melatih kemampuan, memperluas pengetahuan, dan menghasilkan karya yang lebih baik dari sebelumnya.
+                    </div>
+                </div>
+            </section>
+            
+            <hr id="hrkedua">
+            
+             <img id="img2"src="pita.png">
+            
+            
+            <section id="skills">
+     <div class="maskills"> My Skills</div>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Canva</div>
+    </div>
+  </section>
+            <hr id="hrketiga">
+            
+            <section id="Contact Me">
+                <div class="Contact">
+  <h2>📬 Contact Me 📬</h2>
+  <p>Email: <b>lintangd632@Gmail.com</b></p>
+  <p>Instagram:
+  <a id="contact" href="https://www.instagram.com/25.lincvv?igsh=MTQwbjV0a3J1dG1rcQ=="><b>25.lincvv</b></p>
+  </a>
+  <p>WhatsApp: 
+    <a id="contact" href="https://wa.link/o79s7k" target="_blank">
+      <b>0838-3153-2404</b>
+    </a>
+  </p>
+</div>
+            </section>
+            
+            <footer>
+                © 2025 Portofolio Dewi Lintang
+            </footer>
+            
+        </body>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </head>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</html>
